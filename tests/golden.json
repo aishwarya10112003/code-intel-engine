@@ -1,0 +1,38 @@
+[
+  {
+    "id": "q1_deposit",
+    "question": "How do I add money to an account?",
+    "expected_chunk_substr": "deposit",
+    "answer_must_include": ["deposit"]
+  },
+  {
+    "id": "q2_overdraw",
+    "question": "What happens if I withdraw more money than my balance?",
+    "expected_chunk_substr": "withdraw",
+    "answer_must_include": ["insufficient"]
+  },
+  {
+    "id": "q3_stripe_key",
+    "question": "Where should the Stripe secret key be stored?",
+    "expected_chunk_substr": "API Keys",
+    "answer_must_include": ["STRIPE_SECRET_KEY"]
+  },
+  {
+    "id": "q4_deploy",
+    "question": "How is the payments service deployed?",
+    "expected_chunk_substr": "Deployment",
+    "answer_must_include": ["docker"]
+  },
+  {
+    "id": "q5_area",
+    "question": "What does the area_of_circle function compute?",
+    "expected_chunk_substr": "area_of_circle",
+    "answer_must_include": ["circle"]
+  },
+  {
+    "id": "q6_unanswerable",
+    "question": "How do I reset my forgotten password?",
+    "unanswerable": true,
+    "answer_must_include": ["couldn't find"]
+  }
+]

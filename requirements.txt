@@ -1,0 +1,24 @@
+# Install into a Python 3.11 or 3.12 virtual environment (NOT 3.14 — the AI
+# libraries don't support it yet):
+#
+#   python3.12 -m venv .venv
+#   ./.venv/bin/pip install -r requirements.txt
+#
+# ---------------------------------------------------------------------------
+# Phase 1 (chunking) uses only the Python standard library — nothing to install.
+
+# Phase 2 — embeddings + vector store
+sentence-transformers
+chromadb
+
+# Phase 3 — generation with citations (free LLM via Groq) + local secrets
+groq
+python-dotenv
+
+# Phase 5 — hybrid (keyword) search
+rank-bm25
+
+# Phase 6 — reranking uses the CrossEncoder from sentence-transformers (already above)
+
+# Phase 8 — demo web UI
+streamlit
