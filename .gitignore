@@ -7,3 +7,8 @@ chunks.json
 *_chunks.json
 .DS_Store
 .chroma/
+
+# Generated indexes and inputs — never commit
+bakery.json
+*.jsonl
+traces/
